@@ -1,0 +1,8 @@
+#!/bin/bash
+
+inst_hook pre-pivot 01 "$moddir/growrootfs.sh"
+
+dracut_install resize2fs
+dracut_install e2fsck
+dracut_install awk
+
